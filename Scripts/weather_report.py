@@ -63,7 +63,7 @@ def weather():
             z = x["weather"]
             weather_description = z[0]["description"]
             the_voice.say_and_print(" Temperature (in celsius) = " +
-                                    str(current_temperature - 273) +
+                                    str(round((current_temperature - 273), 2)) +
                                     "\n atmospheric pressure (in hPa unit) = " +
                                     str(current_pressure) +
                                     "\n humidity (in percentage) = " +

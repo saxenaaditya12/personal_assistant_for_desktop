@@ -129,6 +129,7 @@ def start():
             ex.lower()
         except:
             print("Say the expression or \"CANCEL\" to cancel")
+            ex = the_voice.listening()
             continue
         if ex == "cancel":
             the_voice.say_and_print("okay!")

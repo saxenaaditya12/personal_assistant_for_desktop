@@ -1,0 +1,19 @@
+{"save workspace" : "for saving workspace", 
+"set up workspace" : "to set workspace (open workspace apps)", 
+"search file" : "for searching a file",
+"open application" : "for opening an application",
+"calculate" : "for opening calculator", 
+"send mail" : "for sending email",
+"read inbox" : "for opening inbox",
+"send whatsapp" : "for whatsapp messaging", 
+"tell weather" : "for weather report", 
+"find meaning" : "for finding meaning of a word", 
+"search google" : "for browsing",
+"open site" : "for opening website",
+"set reminder" : "for setting a reminder", 
+"movies nearby" : "for finding movies nearby", 
+"plan travel" : "to plan travel, or booking hotels, flights and trains", 
+"latest updates" : "for showing latest news", 
+"cricket score" : "for live cricket score"}
+
+

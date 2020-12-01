@@ -58,5 +58,6 @@ def start(cmd):
         return 1
     elif "calculate" in cmd or ("run" in cmd and "calculator" in cmd) or ("open" in cmd and "calculator" in cmd):
         calculate.start()
+        return 1
 
     return 0

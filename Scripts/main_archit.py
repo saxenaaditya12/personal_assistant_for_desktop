@@ -58,7 +58,6 @@ def start(cmd):
         the_voice.say_and_print("Opening Site...")
         frequent_site.site(a)
         return 1
-
     elif "set reminder" in cmd or ("set" in cmd and "reminder" in cmd):
         the_voice.say_and_print("What shall I remind you about?")
         a = the_voice.listening()

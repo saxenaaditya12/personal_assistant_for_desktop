@@ -1,0 +1,1 @@
+Run the master script, let the assistant load, then say a command to perform a task.

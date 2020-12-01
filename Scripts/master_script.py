@@ -50,6 +50,10 @@ while True:
 
         if cmd is None:
             pass
+        elif ("who" in cmd and "are" in cmd and "you" in cmd) or ("tell" in cmd and "about" in cmd and "yourself" in cmd):
+            assistant_settings.intro()
+        elif ("what" in cmd and "can" in cmd and "you" in cmd and "do" in cmd) or ("your" in cmd and "powers" in cmd):
+            assistant_settings.features()
         elif ("add" in cmd and "user" in cmd) or ("new" in cmd and "user" in cmd) or ("new" in cmd and "user" in cmd and "info" in cmd):
             the_voice.say_and_print("Enter your details")
             user_data.collect_user_data()

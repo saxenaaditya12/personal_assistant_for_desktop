@@ -25,7 +25,7 @@ class Assistant:
                   "Archit Dogra",
                   "Harshit Singh"]
     commands = {"save workspace": "for saving workspace",
-                "set up workspace": "to set workspace (open workspace apps)",
+                "set up workspace": "to open workspace apps",
                 "search file": "for searching a file",
                 "open application": "for opening an application",
                 "calculate": "for opening calculator",
@@ -328,7 +328,26 @@ def new_profile(name=None):
         assistant.set_vals(voice, rate, nm)
 
 
+def intro():
+    txt = "Hello,\nI am a personal assistant for your desktop."
+    the_voice.say_and_print(txt)
+    txt = "I was developed by:"
+    the_voice.say_and_print(txt)
+    for i in Assistant.creators:
+        the_voice.say_and_print(i)
+    txt = "I am your assistant, so you can call me whatever you want to."
+    the_voice.say_and_print(txt)
+    features()
+
+
+def features():
+    txt = "\nI can perform various tasks such as:"
+    the_voice.say_and_print(txt)
+    for i in Assistant.commands:
+        txt = "say " + i + " " + Assistant.commands[i]
+        the_voice.say_and_print(txt)
+
+
 assistant = Assistant()
 read_vals()
-for cmd in Assistant.commands:
-    the_voice.say_and_print("say " + cmd + " " + Assistant.commands[cmd])
+
